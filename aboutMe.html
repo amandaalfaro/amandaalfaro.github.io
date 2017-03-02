@@ -1,0 +1,296 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>aboutMe</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+    height: 100%;
+    color: #777;
+    line-height: 1.8;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+    opacity: 0.7;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+    background-image: url('file:///Macintosh HD/Users/amanda1025/Desktop/img_parallax1.jpg');
+    min-height: 100%;
+}
+
+/* First image (About Me) */
+.bgimg-2 {
+    background-image: url('itsme.jpg');
+    min-height: 400px;
+}
+
+/* Second image (Comp Sci) */
+.bgimg-2 {
+    background-image: url('ard.jpg');
+    min-height: 400px;
+}
+
+/* Third image (Wrestling) */
+.bgimg-3 {
+    background-image: url("firstRaw.jpg");
+    min-height: 400px;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+
+/* Turn off parallax scrolling for tablets and mobiles */
+@media only screen and (max-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+    }
+}
+
+<!-- nav bar dropdown -->
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+
+li a, .dropbtn {
+    display: inline-block;
+   
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: white;
+}
+
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+</style>
+</head>
+
+<body>
+
+
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <ul class="w3-navbar" id="myNavbar">
+    <li class="dropdown">
+    	<a href="#" class="w3-padding-large dropbtn">EXPLORE</a>
+    	<div class="dropdown-content">
+            <a href="index.html" class="w3-padding-large">HOME</a>
+            <a href="aboutMe.html" class="w3-padding-large">ABOUT ME</a>
+        	  <a href="courses.html" class="w3-padding-large">COURSES AND PROJECTS</a>
+        	  <a href="AmandaAlfaroSept.pdf" class="w3-padding-large" target="_blank">RESUME</a>
+            <a href="contact.html" class="w3-padding-large">CONTACT</a>
+
+    	</div>
+  </li>
+    
+  </ul>
+</div>
+
+
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="about">
+  <h3 class="w3-center">ABOUT ME</h3>
+  <p class="w3-center"><em></em></p>
+  <p>   Welcome to my personal website! I’m currently a senior at Louisiana State University studying Computer Science and concentrating in <b>Software Engineering</b>. I’m also getting a minor in Information Technology Management in the business department. Here at LSU I’m an officer for the newly founded <b>Women in Computer Science (WICS)</b> club. We are currently gearing up for our annual Game Jam later this month. While I'm helping plan and coordinate that event I’m also a member of <b>Society of Hispanic Professional Engineers (SHPE)</b>, <b>Association for Computing Machinery (ACM)</b>, and <b>Society of Women Engineers (SWE)</b>.
+  </p>
+  <p>   Besides school, I have recently been hired as an <b>Applications Developer Intern</b> for PTS Solutions here in Baton Rouge. This past fall and spring I tried so hard to get an internship by attending career fairs, conferences, building my network on linkedin and submitting over 35 applications online. As all my peers one by one received offers, I became wary. Once May rolled around I decided that since I didn't get an internship offer that I would enroll in summer school, along with  working as an assistant manager at a retail store, while completing side coding projects that would help me stay in the game. Throughout the summer I never stopped looking for opportunities and ran across my current job. Moral of the story, don't give up. If you are reading this and feel discouraged, know that if you are persistent, keep looking for opportunities and keep practicing you will get what you put in.
+  </p>
+  <p>   In my spare time, I love reading up on news, creating new projects, and hanging out with my friends. I usually focus on news articles pertaining to technology and entertainment . I like practicing my coding skills and learning new things I can do with code. While attending <b>SQL Saturday</b>, a conference here in Baton Rouge that exposes our community to technical training from IT professionals, I was exposed to Xamarin and have been learning more about it's abilities. 
+  When my friends and I hangout we love trying new restaurants, indoor trampoline parks, museums, and other live events. Some upcoming events I’m excited for is the Women in Computer Science Game Jam (September 2016), Beyonce Concert (September 2016), Grace Hopper Conference (October 2016), Comic-Con (January 2017), WWE Events (January 2017), and TechNOLAgy (April 2017). </p>
+  
+  <div class="w3-row">
+    <div class="w3-col m6 w3-center w3-section">
+    <br>
+    <br>
+      <img src="scan.png" class="w3-circle" alt="Photo of Me">
+    </div>
+
+    <!-- Hide this text on small devices -->
+    <div class="w3-col m6 w3-hide-small w3-section">
+    <br>
+    <br>
+      <p>Below you will find more information about interests I have in Computer Science and read descriptions of some of my projects I have completed. Further down you will read about why I enjoy pro-wrestling! </p>
+      <p> Make sure to connect with me on LinkedIn! For any feedback regarding my website or me in general you can contact me through the contact tab in the left hand corner.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Second Parallax Image with Portfolio Text Computer Science -->
+<div class="bgimg-2 w3-display-container">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-light-grey w3-wide">COMPUTER SCIENCE</span>
+  </div>
+</div>
+
+<!-- Container (Computer Science Section) -->
+
+<div class="w3-content w3-container w3-padding-64" id="about">
+      <p>I never coded before college. In fact, I never knew anything about computers other than the fact that they were difficult to understand. Senior year of high school I decided that I wanted to work with computers because I saw my mom's friend who was a tech worker and that person seemed so knowledgeable with computers. I don't know what it was inside my head that went off but I'm glad it did. I knew that whatever I decided to do for the rest of my life that I wanted to help people. In high school I was in the Kiwanis club and received an honor cord from them upon graduation. I then realized that I could help others through technology. In computer science you can literally do anything you think of. You can solve any problem, design any project and do it.</p>
+
+      <p>Computer Science, in every way has inspired me to be whoever I want to be. Coming into the field I wasn't expecting the gender ratio to be so uneven. Walking into my first computer science class at LSU was nerve wrecking. I heard others talking to each other about advanced topics even worse I was the only female. A rush of loneliness and fear came rushing into my body. This is why I became so involved in Women in Computer Science (WICS) at LSU. I don't want anyone to feel alone for going to class to gain knowledge. I hope to inspire minorities to join computer science regardless of of the ratios because everyone deserves to study computer science regardless of education, sexual orientation, race, gender, family background, and salary background.
+      </p> 
+
+      <p>The subjects in Computer Science I enjoy practicing and learning about the most are
+      Data Structures and Algorithms (specifically implementing trees and hashtables)
+      The Software lifecycle obtaining software requirements and documentation
+      Testing the software by unit, integration, systems, and acceptance testing
+      Product Management
+      </p>
+
+      <p>I’m currently trying to build up my Configuration Management skills so I can learn more about code sharing and contributing. I’m attending Open Source Day 2016 at Grace Hopper in October and I can’t wait to collaborate with a large team. Right now at my internships, I am part of the development team and am learning how they collaborate and handle their communication through software specifically for our team who uses Scrum.
+      </p>
+
+</div>
+
+<!-- Third Parallax Image with Portfolio Text Wrestling -->
+<div class="bgimg-3 w3-display-container">
+  <div class="w3-display-middle">
+     <span class="w3-xxlarge w3-text-light-grey w3-wide">PRO-WRESTLING</span>
+  </div>
+</div>
+
+<!-- Container (Wrestling Section) -->
+<div class="w3-content w3-container w3-padding-64" id="about">
+  <!-- <h3 class="w3-center">ABOUT ME</h3> -->
+    <p>Back in August 2015, my brother asked my mom yo get a pay per view for World Wrestling Entertainment (WWE) named SummerSlam which was apparently one of the biggest events of the year. My mom agreed and we all watched it as a family and instantly became attached. I remember John Cena fighting Seth Rollins for the U.S. Championship only to get attacked by Jon Stewart, then the daily show host, ending in an upset lost for John Cena. I was so intrigued. My thoughts of wrestling before could sum up to one word: fake, but after the Sunday night in August, my feelings on pro-wrestling have been nothing but respect. To me, the WWE is not fake it’s choreographed. What I mean by choreographed is that yes the wrestlers and management knows who is going to win while pretending they don't. What I mean by not fake is that these wrestlers are real athletes that travel 250 days out of the year. Some of them were even professional athletes prior to wrestling. They put their bodies on the line for the pure love of the sport. It is one of the few live entertainment that incorporates acting skills and athletic skills into one. 
+    </p>
+
+    <p>
+    I especially appreciate the women who have changed women’s wrestling. Unfortunately, majority of women’s wrestling in the the past wasn't about showing off wrestling skills, if you know what I mean, but these women have worked so hard to bring the seriousness back into wrestling.
+    </p>
+
+    <p>
+    WWE has incorporated technology into their shows. When it comes to technology, WWE is staying ahead of the game. They’ve already incorporated Virtual Reality into some events. An example of their usage of VR is at Wrestlemania this past year, they set up a 360 degree camera to tape all of the wrestlers entrances. They then posted the videos on their youtube where fans like me who weren't there (and even the fans who were there) can experience Wrestlemania in a new perspective.This helps fans around the world have a better WWE experience. Another example is that WWE has a great way of getting user stores from the fans who utilize the WWE website and the WWE app. I have conducted multiple surveys in their website and suggested ideas that ended up being changed. The WWE really does listen to their fans and it’s very nice to see companies like WWE take in user experience to better the product.
+    </p>
+  
+</div>
+
+<!-- Container (Portfolio Section) -->
+<div class="w3-content w3-container w3-padding-64" id="portfolio">
+  <h3 class="w3-center">COMPUTER SCIENCE AND WWE EXPERIENCES</h3>
+  <p class="w3-center"><em>Here are some memories of wrestling events, computer sciece conferecne, and Game Jam that I have attended.</em></p><br>
+
+  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+  <div class="w3-row-padding w3-center">
+    
+    <div class="w3-col m3">
+      <img src="nxtnola.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="something">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="ghc15.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="something">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="women.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="something">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="sethPic.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="something">
+    </div>
+
+  </div>
+
+
+  <div class="w3-row-padding w3-center w3-section">
+
+    <div class="w3-col m3">
+      <img src="googleAtGHC.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="something">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="undertaker.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="something">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="godaddy.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="something">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="xavierPic.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="something">
+    </div>
+
+  </div>
+</div>
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-closebtn w3-text-white w3-opacity w3-hover-opacity-off w3-xxlarge w3-container w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-dark-grey w3-padding-48 w3-hover-black">
+     <a href = "https://github.com/amandaalfaro"><img src = "githubLogo.png" alt="Github Link" width="44" height ="44" hspace="9"></a>
+     <a href = "https://amandaalfarocs.wordpress.com/"><img src = "wordpressLogo.png" alt="Wordpress Link" width="44" height ="44" hspace="9"></a>
+     <a href = "https://www.linkedin.com/in/amanda-alfaro-75ba23104"><img src = "linkedinLogo.png" alt="Linkedin Link" width="44" height ="44" hspace="9"></a>
+      <a href="mailto:aalfa11@lsu.edu"><img src = "emailLogo.png" alt="Email Link" width="44" height ="44" hspace="9"></a>
+  
+  <p>Amanda Alfaro 2017 <a href="http://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity"></a>
+  </p>
+</footer>
+ 
+<script>
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
+        navbar.className = "w3-navbar" + " w3-card-2" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card-2 w3-animate-top w3-white", "");
+    }
+}
+</script>
+
+</body>
+</html>
